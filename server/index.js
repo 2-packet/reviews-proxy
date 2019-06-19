@@ -12,7 +12,7 @@ app.get('/:id', (req, res) => {
 
 app.get('/:id/summary', (req, res) => {
   const {id} = req.params;
-  axios.get(`http://52.53.210.77:3010/${id}/summary`)
+  axios.get(`http://52.53.158.106:3010/${id}/summary`)
   .then(response => {
     res.status(200).send(response.data);
   })
@@ -23,7 +23,7 @@ app.get('/:id/summary', (req, res) => {
 
 app.get('/:id/reviews', (req, res) => {
   const {id} = req.params;
-  axios.get(`http://52.53.210.77:3010/${id}/reviews`)
+  axios.get(`http://52.53.158.106:3010/${id}/reviews`)
   .then(response => {
     res.status(200).send(response.data);
   })
